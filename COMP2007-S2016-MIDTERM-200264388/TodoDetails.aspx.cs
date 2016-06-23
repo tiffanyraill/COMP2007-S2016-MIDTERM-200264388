@@ -29,13 +29,13 @@ namespace COMP2007_S2016_MIDTERM_200264388
             using (TodoConnection db = new TodoConnection())
             {
                 //use the ToDoList model to create new toDoList object and save new record
-                TodoList newTodoList = new TodoList();
+                Todo newTodoList = new Todo();
 
       
                 //add data to the new toDoList record
                 newTodoList.TodoName = TodoNameTextBox.Text;
                 newTodoList.TodoNotes = TodoNotesTextBox.Text;
-                newTodoList.Completed = Completed.Text;
+                newTodoList.Completed = Completed.Checked;
 
                 //use linq and ADO.NET to add/insert a new ToDoListName into the DB
                 db.Todos.Add(newTodoList);

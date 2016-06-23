@@ -7,7 +7,7 @@
                 <h1>ToDo List</h1>
                 <a href="ToDoDetails.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add ToDo</a>
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
-                     ID="ToDoGridView" AutoGenerateColumns="false" DataKeyNames="ToDoID" OnRowDeleting="ToDoGridView_RowDeleting"
+                     ID="ToDoGridView" AutoGenerateColumns="false" DataKeyNames="TodoID" OnRowDeleting="ToDoGridView_RowDeleting"
                      OnRowEditing="ToDoGridView_RowEditing">
                     <Columns>
                         <asp:BoundField DataField="TodoID" HeaderText="ToDo ID" Visible="false" />
