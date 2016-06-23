@@ -11,12 +11,11 @@
                 </div>   
                 <div class="form-group">
                     <label class="control-label" for="TodoNotesTextBox">ToDo Notes</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="TodoNotesTextBox" placeholder="ToDo Notes"
-                     style="Z-INDEX: 101; LEFT: 56px; OVERFLOW: hidden; POSITION: absolute; TOP: 72px" TextMode="MultiLine"></asp:TextBox> 
+                    <asp:TextBox runat="server" CssClass="form-control" ID="TodoNotesTextBox" placeholder="ToDo Notes" TextMode="MultiLine"></asp:TextBox> 
                     </div>
                 <div class="form-group">
-                    <label class="control-label" for="CompletedTextBox">Completed</label>
-                   <asp:CheckBox ID="Completed" runat="server" Text="Completed" AutoPostBack="True"/>
+                    <label class="control-label" for="TodoCompletedTextBox">Completed</label>
+                   <asp:CheckBox ID="TodoCompleted" runat="server" AutoPostBack="True"/>
                      </div>   
                 <div class="text-right">
                     <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server"
